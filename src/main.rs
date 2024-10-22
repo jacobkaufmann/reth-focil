@@ -20,8 +20,6 @@ fn main() {
 
                     ctx.modules.merge_configured(ext.into_rpc())?;
 
-                    println!("FOCIL extension enabled");
-
                     Ok(())
                 })
                 .launch()
