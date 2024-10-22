@@ -4,3 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+alloy = { version = "0.5.2", features = ["rlp"] }
+clap = { version = "4.5.20", features = ["derive"] }
+jsonrpsee = { version = "0.24.7", features = ["server", "macros"] }
+reth = { git = "https://github.com/paradigmxyz/reth", tag = "v1.1.0" }
+reth-transaction-pool = { git = "https://github.com/paradigmxyz/reth", tag = "v1.1.0" }
+reth-node-ethereum = { git = "https://github.com/paradigmxyz/reth", tag = "v1.1.0" }
