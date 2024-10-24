@@ -470,6 +470,10 @@ where
             executed_senders.push(tx.signer());
             executed_txs.push(tx.clone().into_signed());
 
+            // NOTE
+            //
+            // instead of setting the index to zero, we could keep track of a flag that indicates
+            // whether or not we should perform another pass of the inclusion list.
             inclusion_list_bitfield[i] = false;
             i = 0;
         }
